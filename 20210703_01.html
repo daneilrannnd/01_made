@@ -25,9 +25,59 @@
             margin:50px auto;
             outline:1px solid red;
         }
+        .searchBox {
+            width:300px;
+            border:2px solid #19ce60;
+            padding:10px;
+            margin:20px auto;
+            box-sizing:border-box;
+            border-radius:30px;
+        }
+        .searchBox:hover {
+            transition:0.8s;
+            border-color:red;
+        }
+
+        .searchBox:hover input {
+            background-color:#f3f3f3;
+        }
+        .searchBox input {
+            border:none;
+            width:100%;
+            font-size:14px;
+            outline:none;
+        }
+        .arrow {
+            width:0px;
+            height:0px;
+            border:20px solid red;
+            border-color:red blue pink green;
+            /* border-color:transparent red transparent transparent; */
+        }
+        button {
+            border-radius:5px;
+            border:1px solid transparent;
+            width:120px;
+            box-sizing:border-box;
+            height:32px;
+            background-color:#f3f3f3;
+            padding:0 10px;
+            margin:20px;
+        }
+        button:hover {
+            border:1px solid #000;
+            transition:0.9s;
+        }
     </style>
 </head>
 <body>
+    <button type="button">
+        Google Search
+    </button>
+    <div class="arrow"></div>
+    <div class="searchBox">
+        <input type="search" placeholder="검색어 입력">
+    </div>
     <div class="box">HELLO</div>
     <div class="box2">WORLD</div>
     <input type="text">
