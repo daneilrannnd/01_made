@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.background {
+    width:1440px;
+    height:800px;
+    background-color:#0A0C1C;
+}
+
+.background .group1 {
+    width:1110px;
+    height:446px;
+    outline:1px solid red;
+    text-align:center;
+    color:white;
+    
+    
+}
+
+.background .group1 h1 {
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:24px;
+}
+
+.background .group1 h1>span {
+    color:#AB5CDB;
+}
+
+.background .group1 p {
+    color:gray;
+    font-size:15px;
+    line-height:30px;
+    margin-bottom:72px;
+    
+}
+
+.list {
+    display:flex;
+    justify-content: center;
+}
+
+.list h2 {
+    font-size:24px;
+    font-weight:bold;
+}
+
+.list p {
+    font-size:12px;
+    color:gray;;
+}
+
+.list .number1 {
+    width:83px;
+    height:56px;
+    outline:1px solid red;
+}
+
+.list .number2 {
+    width:83px;
+    height:56px;
+    outline:1px solid red;
+}
+
+.list .number3 {
+    width:83px;
+    height:56px;
+    outline:1px solid red;
+}
