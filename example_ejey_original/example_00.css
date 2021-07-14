@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+.list {
+    width:920px;
+    margin:50px auto;
+    display:flex; 
+    background-color:#E28625;;
+    border-radius:10px;
+    overflow:hidden; 
+}
+
+.list li {
+    flex-grow:1;
+    color:#fff;
+    font-size:15px;
+    padding:48px; 
+}
+
+
+
+.list li:first-child {
+    background-color:#E28625;
+    /* border-radius:10px 0 0 10px; */
+}
+.list li:nth-child(2) {
+    background-color:#006971;
+    border-radius:10px;
+}
+.list li:last-child {
+    background-color:#004140;
+    /* border-radius:0 10px 10px 0; */
+}
+
+.list .car {
+    position:relative;
+    padding-left:20px;  
+}
+
+.list .car img {
+    position:relative;
+    transition:left 0.5s;
+    left:0;
+    /* transition:left 0.5s, top 0.5s 0.5s;
+ 
+    top:0; */
+}
+
+.list .car:before {
+    content:'';
+    display:block;
+    border-radius:50%;
+    width:40px;height:40px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    left:0;top:calc(50% - 20px);
+    transition:left 0.5s 0.3s;
+
+}
+
+.list li:hover .car:before {
+    left:calc(100% - 40px);
+}
+
+.list li:hover .car img {
+    left:80px; 
+}
+
+.list h1 {
+    font-size:40px;
+    font-weight:600;
+    margin:40px 0;
+}
+
+.list p {
+    line-height:2;
+}
+
+.list a {
+    display:block;
+    background-color:#fff;
+    border-radius:30px;
+    height:40px;
+    line-height:40px;
+    width:146px;
+    text-align:center;
+    font-weight:600;
+    margin-top:80px;
+    text-transform:capitalize;
+}
+
+
+.list li:first-child a {
+    color:#E28625;
+}
+.list li:nth-child(2) a {
+    color:#006971;
+}
+.list li:last-child a {
+    color:#004140;
+}
+
+@media all and (max-width:600px) {
+    .list {
+        display:block;
+        width:auto;
+        margin:0 auto;
+    }
+
+    .list h1 {
+        font-size:12.31vw;
+    }
+
+ 
+    .list li {
+        height:80vh;
+        font-size:4.62vw;
+    }
+
+    .list a {
+        width:50vw;
+        height:10vw;
+        line-height:10vw;
+
+    }
+}
+
+@media all and (max-width:375px) {
+    .list {
+        text-align:center;
+    }
+
+    .list li {
+        height:auto;
+    }
+
+    .list .car:before {
+        left:calc(50% - 20px);
+    }
+
+    .list .car {
+        text-align:center;
+    }
+
+    .list li:hover .car:before {
+        left:calc(50% - 20px);
+    }
+
+    .list li:hover .car img {
+        left:0;
+    }
+
+
+    .list a {
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
