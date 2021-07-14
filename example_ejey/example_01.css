@@ -98,8 +98,9 @@ body {
 .background .group2 img {
     width:540px;
     height:446px;
-    flex-grow:1;
-    flex-shrink:1;
+    flex-grow:1;  /* .group2에 display:flex 가 없으므로, img는 플렉스아이템이 아니어서 이 속성을 쓸 수 없음 */
+    flex-shrink:1; /* .group2에 display:flex 가 없으므로, img는 플렉스아이템이 아니어서 이 속성을 쓸 수 없음 */
 }
     
 
+/* 아래 반응형을 추가해서 쓰세요 */
