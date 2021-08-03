@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+ 
+body {
+    background-color:#0A0C1C; 
+}
+
+.insights {
+    width:1110px; 
+    margin-top:calc(50vh - 223px);
+    margin-left:auto;
+    margin-right:auto; 
+    padding:77px;
+    background-color:#1B1937;
+    background-image:url('./images/example_1_bg.png');
+    background-position:right top;
+    background-repeat:no-repeat;
+    background-size:50% auto;
+    color:#fff; 
+}
+
+ 
+.insights h1 {
+    font-size:36px;
+    font-weight:bold;
+}
+
+.insights h1 span {
+    color:#AB5CDB;
+}
+
+.insights p {
+    margin-top:24px;
+    font-size:15px;
+    color:gray;
+    line-height:25px;
+}
+
+.insights .list { 
+    display:flex; 
+    text-transform:uppercase; 
+    margin-top:70px;
+}
+
+
+.insights .list dl:nth-child(2) {
+    margin:0 60px;
+}
+
+.insights .list dl {
+    display:flex;
+    flex-direction:column;
+}
+
+.insights dt {
+    font-size:12px;
+    color:gray;
+    letter-spacing:1.5px;
+    order:2;
+}
+
+.insights dd {
+    font-size:24px;
+    font-weight:bold;
+    order:1;
+}
+
+
+/* 아래 반응형을 추가해서 쓰세요 */
+@media all and (max-width:375px) {
+    .insights {
+        width:auto;
+        margin:10vh 25px;
+        padding:200px 30px;
+        background-position:left top;
+        background-size:100% 200px;
+    }
+ 
+
+    .insights .list {
+        display:block;
+    }
+
+    .insights .list dl:nth-child(2) {
+        margin:30px 0;
+    }
+ 
+}
