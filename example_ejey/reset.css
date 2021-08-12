@@ -17,7 +17,8 @@ dt,
 dd,
 img,
 figure,
-figcaption {
+figcaption,
+fieldset {
     margin: 0;
     padding: 0;
 }
@@ -54,15 +55,20 @@ table {
 }
 
 ul,
-ol {
+ol,
+li {
     list-style: none;
 }
 
-.blind {
+.blind, legend {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
     overflow: hidden;
+}
+
+fieldset {
+    border:none;
 }

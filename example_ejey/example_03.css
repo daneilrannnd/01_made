@@ -7,22 +7,37 @@ body {
 
 .insights {
     width:1110px; 
+<<<<<<< HEAD
     margin-top:200px;
     margin-left:auto;
     margin-right:auto; 
     padding:77px;
     box-sizing:border-box;
+=======
+    margin-top:calc(50vh - 223px);
+    margin-left:auto;
+    margin-right:auto; 
+    padding:77px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     background-color:#1B1937;
     background-image:url('./images/example_1_bg.png');
     background-position:right top;
     background-repeat:no-repeat;
+<<<<<<< HEAD
     background-size:50% 100%;
+=======
+    background-size:50% auto;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     color:#fff; 
 }
 
  
 .insights h1 {
+<<<<<<< HEAD
     font-size:5vw;
+=======
+    font-size:36px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     font-weight:bold;
 }
 
@@ -34,7 +49,11 @@ body {
     margin-top:24px;
     font-size:15px;
     color:gray;
+<<<<<<< HEAD
     line-height:25px; 
+=======
+    line-height:25px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 }
 
 .insights .list { 
@@ -48,23 +67,38 @@ body {
     margin:0 60px;
 }
 
+<<<<<<< HEAD
 .insights dl {
     display:flex;
     flex-direction:column;
 } 
+=======
+.insights .list dl {
+    display:flex;
+    flex-direction:column;
+}
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 
 .insights dt {
     font-size:12px;
     color:gray;
+<<<<<<< HEAD
     letter-spacing:1.5px; 
     order:2;
 }
  
+=======
+    letter-spacing:1.5px;
+    order:2;
+}
+
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 .insights dd {
     font-size:24px;
     font-weight:bold;
     order:1;
 }
+<<<<<<< HEAD
  
 
 /* 아래 반응형을 추가해서 쓰세요 */
@@ -74,6 +108,16 @@ body {
         overflow:hidden;
         margin:10vh 25px;
         padding:220px 30px 30px;
+=======
+
+
+/* 아래 반응형을 추가해서 쓰세요 */
+@media all and (max-width:375px) {
+    .insights {
+        width:auto;
+        margin:10vh 25px;
+        padding:200px 30px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
         background-position:left top;
         background-size:100% 200px;
     }

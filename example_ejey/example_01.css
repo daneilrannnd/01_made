@@ -1,22 +1,38 @@
 @charset "utf-8";
 
+<<<<<<< HEAD
  
 body {
     background-color:#0A0C1C; 
+=======
+
+body {
+    background-color:#0A0C1C;    
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 }
 
 .background {
     width:1110px;
     height:446px;
+<<<<<<< HEAD
     margin-top:calc(50vh - 223px);
     margin-left:auto;
     margin-right:auto;
+=======
+    margin-top:calc(50vh - 223px); 
+    margin-left:auto;
+    margin-right:auto; 
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     display:flex;
     
 }
 
 .background .group1 {
+<<<<<<< HEAD
     background-color:#1B1937; 
+=======
+    background-color:#1B1937;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     color:white;
     padding:77px;
     width:50%;
@@ -40,6 +56,7 @@ body {
     margin-bottom:72px;
 }
 
+<<<<<<< HEAD
 .background .group1 .list { 
     display:flex; 
     text-transform:uppercase; 
@@ -50,6 +67,16 @@ body {
     margin:0 60px;
 }
 
+=======
+.background .group1 .list {
+    display:flex;
+    text-transform:uppercase;
+}
+
+.background .group1 .list .num2 {
+    margin:0 40px;
+}
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 
 .background .group1 .list h2 {
     font-size:24px;
@@ -65,6 +92,7 @@ body {
 
 .background .group2 {
     width:50%;
+<<<<<<< HEAD
     /* 
     background-image:url('./images/example_1_bg.png');
     background-repeat:no-repeat;
@@ -74,6 +102,24 @@ body {
     background:url('./images/example_1_bg.png') no-repeat center center/cover;
 
     position:relative;
+=======
+    /* background-image:url('./images/example_1_bg.png');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover; */
+    background:url('./images/example_1_bg.png') no-repeat center center/cover;
+    position:relative;
+}
+
+.background .purple {
+    background-color:#AB5CDB;
+    mix-blend-mode:multiply;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 }
  
 
@@ -111,9 +157,40 @@ body {
         margin:30px 0;
     }
 
+<<<<<<< HEAD
+=======
+@media all and (max-width:375px) {
+    .background {
+        flex-direction:column;
+        height:auto;
+        width:auto;
+        margin:10vh 25px;
+    }
+
+    .background .group1 {
+        width:auto;
+        padding:30px;
+        text-align:center;
+        order:2;
+    }
+
+    .background .group1 .list {
+        display:block;
+    }
+
+    .background .group1 .list .num2 {
+        margin:30px 0;
+    }
+
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     .background .group2 {
         width:auto;
         height:250px;
         order:1;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc

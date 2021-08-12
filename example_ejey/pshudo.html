@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
+=======
+<html lang="ko">
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +18,7 @@
             margin:100px auto;
             padding:50px;
             position:relative;
+<<<<<<< HEAD
         }
 
         .circle {
@@ -26,6 +31,24 @@
 
         .square {
             width:30px;height:30px;
+=======
+
+        }
+
+        .circle {
+            width:30px;
+            height:30px;
+            background-color:dodgerblue;
+            border-radius:50%;
+            position:absolute;
+            left:-15px;
+            top:calc(50% - 15px);
+        }
+
+        .square {
+            width:30px;
+            height:30px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
             background-color:coral;
             position:absolute;
             right:-15px;
@@ -34,21 +57,31 @@
 
         .line {
             display:block;
+<<<<<<< HEAD
             width:20px;height:2px;
+=======
+            width:20px;
+            height:2px;
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
             background-color:goldenrod;
             position:absolute;
             left:calc(50% - 10px);
         }
 
+<<<<<<< HEAD
         
         .box1 p {
              
+=======
+        .box1 p {
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
             position:relative;
             text-align:center;
         }
 
         .box1 p .line:first-child {
             top:-10px;
+<<<<<<< HEAD
         }        
 
         .box1 p .line:last-child {
@@ -56,6 +89,13 @@
         }        
 
 
+=======
+        }
+        
+        .box1 p .line:last-child {
+            bottom:-10px;
+        }
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
 
         footer {
             height:200px;
@@ -67,6 +107,7 @@
             background-color:aquamarine;
         }
 
+<<<<<<< HEAD
         footer{
             outline:1px solid red;
             /* position:fixed; */
@@ -75,6 +116,15 @@
         }
 
        
+=======
+        footer {
+            outline:1px solid red;
+            /* position:fixed; 부모따라가지않음 무조건 기준이 body */
+            right:0;top:0;
+            width:300px;height:100px;
+            /* position:absolute; 원래 기준은 body , 하지만 부모,조상 중에 fixed absolute relative가 있으면 따라감 */
+        }
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     </style>
 </head>
 <body>
@@ -85,13 +135,21 @@
         <div class="circle"></div>
         <p>
             <span class="line"></span>
+<<<<<<< HEAD
             Hello world
+=======
+                Hello world
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
             <span class="line"></span>
         </p>
         <div class="square"></div>
     </div>
     <footer>
+<<<<<<< HEAD
        <p>copyright;</p>
+=======
+        <p>copyright;</p>
+>>>>>>> 2e7b34ad83d19d8eb9d1aa1ae4cbda467971c3fc
     </footer>
 </body>
 </html>
