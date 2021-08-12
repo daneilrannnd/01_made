@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .box1 {
+            width:300px;
+            border:1px solid dodgerblue;
+            border-radius:3px;
+            margin:100px auto;
+            padding:50px;
+            position:relative;
+
+        }
+
+        .circle {
+            width:30px;
+            height:30px;
+            background-color:dodgerblue;
+            border-radius:50%;
+            position:absolute;
+            left:-15px;
+            top:calc(50% - 15px);
+        }
+
+        .square {
+            width:30px;
+            height:30px;
+            background-color:coral;
+            position:absolute;
+            right:-15px;
+            top:calc(50% - 15px);
+        }
+
+        .line {
+            display:block;
+            width:20px;
+            height:2px;
+            background-color:goldenrod;
+            position:absolute;
+            left:calc(50% - 10px);
+        }
+
+        .box1 p {
+            position:relative;
+            text-align:center;
+        }
+
+        .box1 p .line:first-child {
+            top:-10px;
+        }
+        
+        .box1 p .line:last-child {
+            bottom:-10px;
+        }
+
+        footer {
+            height:200px;
+            background-color:pink;
+        }
+
+        header {
+            height:200px;
+            background-color:aquamarine;
+        }
+
+        footer {
+            outline:1px solid red;
+            /* position:fixed; 부모따라가지않음 무조건 기준이 body */
+            right:0;top:0;
+            width:300px;height:100px;
+            /* position:absolute; 원래 기준은 body , 하지만 부모,조상 중에 fixed absolute relative가 있으면 따라감 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        LOGO
+    </header>
+    <div class="box1">
+        <div class="circle"></div>
+        <p>
+            <span class="line"></span>
+                Hello world
+            <span class="line"></span>
+        </p>
+        <div class="square"></div>
+    </div>
+    <footer>
+        <p>copyright;</p>
+    </footer>
+</body>
+</html>
