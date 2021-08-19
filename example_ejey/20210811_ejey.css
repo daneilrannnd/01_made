@@ -194,3 +194,134 @@ body {
     border:none;
     background:url('./images/sp_news.png') no-repeat center center/16px 16px;
 }
+
+
+.news_title {
+    width:1080px;
+    margin:10px auto;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+}
+
+.news_title .menu{
+    display:flex;
+    font-size:14px;
+    font-weight:500;
+}
+
+.news_title .menu li {
+    position:relative;
+    transition:all 0.4s;
+}
+
+.news_title .menu li:first-child {
+    margin-right:40px;
+}
+
+.news_title .menu li.on,
+.news_title .menu li:hover {
+    color:#3f63bf;
+}
+
+.news_title .menu li.on:after,
+.news_title .menu li:hover:after {
+    background-position:center -4px;
+}
+
+.news_title .menu li:after {
+    content:'';
+    display:block;
+    width:10px;
+    height:5px;
+    position:absolute;
+    right:-20px;
+    top:50%; /* calc(50% - 2.5px); */
+    transform:translateY(-50%);
+    background:url('./images/news_arrow.png') no-repeat center -15px;
+}
+
+.news_title .sideMenu {
+    display:flex;
+    font-size:13px;
+    color:#555;
+}
+
+.news_title .sideMenu li {
+    position:relative;
+    margin-left:20px; 
+}
+
+/* .news_title .sideMenu li:first-child:before {
+    display:none;
+} */
+
+.news_title .sideMenu li:not(:first-child):before {
+    content:'';
+    display:block;
+    width:1px;
+    height:13px;
+    left:-10px;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:#999;
+    position:absolute;
+}
+
+
+
+.news_title .sideMenu a:hover {
+    text-decoration:underline;
+}
+
+.news_list { 
+    width:1080px;
+    margin:5px auto;
+}
+
+.list_headline {
+    display:flex;
+    justify-content:space-between;
+}
+
+.list_headline li { 
+    width:calc( (100% - 60px) / 4 );
+}
+
+.list_headline li a { 
+    display:block;
+    padding:10px 20px;
+    border:1px solid #ddd;
+}
+
+
+.list_headline li a:hover h3 {
+    text-decoration:underline;
+}
+.list_headline h3 {
+    font-size:14px;
+    font-weight:600;
+    padding:10px 0;
+    border-top:1px solid #ddd;
+}
+
+.list_headline .content {
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#666;
+}
+ 
+.list_headline .thumb {
+    width:80px;
+    height:54px;
+    overflow:hidden;
+    flex-shrink:0; 
+    margin-right:10px;
+}
+
+
+.list_headline .thumb img {
+    width:100%;
+    min-height:100%;
+}

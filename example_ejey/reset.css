@@ -58,7 +58,11 @@ ol {
     list-style: none;
 }
 
-.blind {
+fieldset {
+    border:none;
+}
+
+.blind, legend {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
