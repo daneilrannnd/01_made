@@ -47,9 +47,11 @@
         </div>
     </header>
 
+    <h2 class="blind">주요메뉴</h2>
     <div class="submenu">
         <div class="submenu_inner">
             <ul class="submenu_list">
+                <!-- 활성화 되는 메뉴에 class="on" 추가 하세요 -->
                 <li class="on">
                     <a href="#">
                         뉴스홈 
@@ -124,30 +126,32 @@
                 </form> 
             </div>
         </div>
-    </div> <!-- //.submenu -->
-    
+    </div> <!-- // .submenu -->
+
     <div class="news_title">
-        <ul>
+        <ul class="menu">
             <li class="on"><a href="#">신문 헤드라인</a></li>
             <li><a href="#">저녁 방송뉴스</a></li>
         </ul>
 
-        <ul>
+        <ul class="sideMenu">
             <li><a href="#">팩트체크</a></li>
             <li><a href="#">언론사 설정</a></li>
             <li><a href="#">언론사 뉴스</a></li>
-            <li><a href="#">라이브러리</a></li>
-        </ul>
-    </div>
+            <li><a href="#">라이브러리</a></li> 
+        </ul>  
+    </div> 
 
     <div class="news_list">
-        <ul>
+        <ul class="list_headline">
             <li>
-                <a href="#"> 
+                <a href="#">
                     <img src="./images/news_logo_1.gif" alt="세계일보">
                     <h3>경제지표는 나아졌다는데... 빚에 허덕 서민 파산은 경제지표는 나아졌다는데</h3>
                     <div class="content">
-                        <img src="./images/dummy_0.jpg" alt="photo">
+                        <div class="thumb">
+                            <img src="./images/dummy_1.jpg" alt="photo">
+                        </div>
                         <p>
                             코로나 실직.투자 실패 잇따라 채무자 1인당 채권자 평균 10명 지난 17일 오전 춘천지방법원 101호 법정에느 36명의 개인회생 사건 재판이 열렸다. 이들이
                         </p>
@@ -155,11 +159,13 @@
                 </a>
             </li>
             <li>
-                <a href="#"> 
+                <a href="#">
                     <img src="./images/news_logo_2.gif" alt="세계일보">
                     <h3>경제지표는 나아졌다는데... 빚에 허덕 서민 파산은 경제지표는 나아졌다는데</h3>
                     <div class="content">
-                        <img src="./images/dummy_0.jpg" alt="photo">
+                        <div class="thumb">
+                            <img src="./images/dummy_1.jpg" alt="photo">
+                        </div>
                         <p>
                             코로나 실직.투자 실패 잇따라 채무자 1인당 채권자 평균 10명 지난 17일 오전 춘천지방법원 101호 법정에느 36명의 개인회생 사건 재판이 열렸다. 이들이
                         </p>
@@ -167,11 +173,13 @@
                 </a>
             </li>
             <li>
-                <a href="#"> 
+                <a href="#">
                     <img src="./images/news_logo_3.gif" alt="세계일보">
                     <h3>경제지표는 나아졌다는데... 빚에 허덕 서민 파산은 경제지표는 나아졌다는데</h3>
                     <div class="content">
-                        <img src="./images/dummy_0.jpg" alt="photo">
+                        <div class="thumb">
+                            <img src="./images/dummy_2.jpg" alt="photo">
+                        </div>
                         <p>
                             코로나 실직.투자 실패 잇따라 채무자 1인당 채권자 평균 10명 지난 17일 오전 춘천지방법원 101호 법정에느 36명의 개인회생 사건 재판이 열렸다. 이들이
                         </p>
@@ -179,11 +187,13 @@
                 </a>
             </li>
             <li>
-                <a href="#"> 
+                <a href="#">
                     <img src="./images/news_logo_4.gif" alt="세계일보">
                     <h3>경제지표는 나아졌다는데... 빚에 허덕 서민 파산은 경제지표는 나아졌다는데</h3>
                     <div class="content">
-                        <img src="./images/dummy_0.jpg" alt="photo">
+                        <div class="thumb">
+                            <img src="./images/dummy_3.jpg" alt="photo">
+                        </div>
                         <p>
                             코로나 실직.투자 실패 잇따라 채무자 1인당 채권자 평균 10명 지난 17일 오전 춘천지방법원 101호 법정에느 36명의 개인회생 사건 재판이 열렸다. 이들이
                         </p>
@@ -191,6 +201,32 @@
                 </a>
             </li>
         </ul>
+    </div>
+    
+    <div class="newsGroup">
+        <div class="left">
+            <section class="headline_news">
+                <header>
+                    <h2>헤드라인 뉴스</h2>
+                    <p>헤드라인 뉴스와 각 기사묶음 타이틀은 기사 내용을 기반으로 <span>자동 추출</span>됩니다.</p>
+                </header>
+                <div class="content">
+                    <a href="#" class="thumb">
+                        <img src="./images/dummy_1.jpg" alt="">
+                    </a>
+                    <ul class="list">
+                        <li><a href="#">국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'</a><span class="count">91</span></li>
+                        <li><a href="#">국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'</a><span class="count">91</span></li>
+                        <li><a href="#">국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'</a><span class="count">91</span></li>
+                        <li><a href="#">국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'</a><span class="count">91</span></li>
+                        <li><a href="#">국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'국민의힘, 부동산 의혹 6명 '셀프 무혐의'</a><span class="count">91</span></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="right">
+            RIGHT
+        </div>
     </div>
 </body>
 </html>

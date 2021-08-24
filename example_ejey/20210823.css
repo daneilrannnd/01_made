@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family:'Noto Sans KR', sans-serif;
+    font-family:12px;
+    line-height:1.2;
+}
+
+.pageHeader {
+    background-color:#3f63bf;
+    color:#c8d8ff;
+}
+
+.pageHeader .inner {
+    width:1080px;
+    height:55px;
+    display:flex;
+    margin:0 auto;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.pageHeader h1 {
+    font-size:15px;
+    font-weight:600;
+    color:white;
+}
+
+.pageHeader h1 a:nth-child(2) {
+    font-size:23px;
+}
+
+.pageHeader .gnb {
+    font-size:15px;
+    font-weight:600;
+}
+
+.pageHeader .left {
+    display:flex;
+    align-items:center;
+}
+
+.pageHeader .gnb ul {
+    display:flex;
+}
+
+.pageHeader .gnb li {
+    margin-left:30px;
+    position:relative;
+}
+
+.pageHeader .gnb li::before {
+    content:'';
+    width:1px;
+    height:15px;
+    display:block;
+    background-color:rgba(0,0,0,0.4);
+    position:absolute;
+    left:-15px;
+    top:calc(50% - 7.5px);
+}
+
+.pageHeader .gnb a:hover,
+.pageHeader .left a:hover {
+    opacity:0.5;
+}
+
+.pageHeader .right {
+    display:flex;
+    font-size:12px;
+    align-items:center;
+}
+
+.pageHeader .btnLogin {
+    border:1px solid rgba(0,0,0,0.3);
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    display:block;
+    font-weight:600;
+    margin-right:20px;
+    padding:5px 10px;
+    transition:all 0.4s;
+}
+
+.pageHeader .btnGnb {
+    width:55px;
+    height:55px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-width:0 1px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.4s;
+}
+
+.pageHeader .btnGnb:hover,
+.pageHeader .btnLogin:hover {
+    background-color:rgba(0,0,0,0.3);
+}
