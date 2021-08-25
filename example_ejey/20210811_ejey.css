@@ -407,11 +407,40 @@ body {
     overflow:hidden;
     display:block;
     flex-shrink:0;
+    position:relative;
 }
 
 .headline_news .thumb img {
     max-width:100%;
     min-height:100%;
+    position:absolute;
+}
+
+.headline_news .thumb .box {
+    position:absolute;
+    font-size:15px;
+    background-color:black;
+    width:300px;
+    height:66px;
+    bottom:0;
+    opacity:0.5;
+}
+
+.headline_news .thumb ul {
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.headline_news .thumb li span {
+    margin-left:40px;
+    border:1px solid #d7d7d7;
+    font-size:10px;
+    line-height:14px;
+    text-align:center;
+    padding:1px 1px 2px 2px;
 }
 
 .headline_news .list {
