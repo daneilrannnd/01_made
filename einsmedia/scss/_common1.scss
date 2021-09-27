@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+$main : #ffcc00;
+$gray : #333, #666 ,#999, #ddd;
+$url : '../images/';
+
+@import 'reset','header';
+
+body {
+    background-color:coral;
+}
+
+h1 {
+    font-size:100px;
+    color:$main;
+
+    &:before {
+        content:'🌝';
+    }
+
+    &:after {
+        content:'🐼';
+    }
+
+    & > span {
+        font-size:50px;
+    }
+
+    span {
+        color:red;
+        font-size:20px;
+    }
+}
+
+h2 {
+    color:$main;
+}
+
+li {
+    color:nth($gray, 1);
+    &:nth-child(2) {
+        color:nth($gray, 2);
+    }
+    &:nth-child(3) {
+        color:nth($gray, 3);
+    }
+    &:nth-child(4) {
+        color:nth($gray, 4);
+    }
+}
+
+.box {
+    width:300px;height:300px;
+    background:url($url + 'mainBG_01.jpg') no-repeat center center/cover;
+}
+
+ 

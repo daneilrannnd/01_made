@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body {
+    background:url('../images/full_bg_02.jpg') no-repeat center bottom/cover;
+
+}
+
+.pageHeader {
+    height:80px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    background-color:rgba(255,255,255,0.1);
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    align-items:center;
+    padding:0 50px;
+
+}
+
+.pageHeader h1 {
+    color:yellow;
+}
+
+.pageHeader .gnb ul {
+    display:flex;
+}
+
+.btnHam {
+    display:none;
+    width:26px;
+    position:fixed;
+    right:20px;
+    top:32px;
+
+}
+
+.btnHam span {
+    display:block;
+    background-color:white;
+    height:2px;
+}
+
+.btnHam span:nth-child(2) {
+    margin:5px 0;
+}
+
+@media screen and (max-width:800px) {
+    .btnHam {
+        display:block;
+    }
+}

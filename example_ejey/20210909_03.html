@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .list {
+            max-width:800px;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            outline:1px solid red;
+        }
+
+        .list img {
+            width:100%;
+        }        
+
+        .list li {
+            width:calc((100% - 60px) / 4 );
+        }
+
+        @media screen and (max-width:768px) {
+            .list {
+                flex-wrap:wrap;
+            }
+
+            .list li {
+                width:calc(50% - 10px);
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .list {
+                flex-direction:column;
+            }
+            
+            .list li {
+                width:calc(100% - 40px);
+                margin:0 20px;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .list li {
+                display:flex;
+                margin-bottom:20px;
+            }
+
+            .list li:last-child {
+                margin-bottom:0;
+            }
+
+            .list li img {
+                width:50%;
+                margin-right:10px;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <img src="./images/dummy_1.jpg" alt="">
+            <p>제목</p>
+        </li>
+        <li>
+            <img src="./images/dummy_1.jpg" alt="">
+            <p>제목</p>
+        </li>
+        <li>
+            <img src="./images/dummy_1.jpg" alt="">
+            <p>제목</p>
+        </li>
+        <li>
+            <img src="./images/dummy_1.jpg" alt="">
+            <p>제목</p>
+        </li>
+    </ul>
+</body>
+</html>
