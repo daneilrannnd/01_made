@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+//  50픽셀짜리이며, 배경색이 레드인 동그라미 만들기
+@mixin circle($size,$color) {
+    background-color:$color;
+    border-radius:50%;
+    width:$size;
+    height:$size;
+
+    display:block;
+}
+
+
+@mixin roundedBox($r, $c:red) {
+    border-radius:$r;
+    background-color:$c;
+    color:#fff;
+    font-size:30px;
+    padding:25px;
+}
+
+.box4 {
+    @include roundedBox(20px);
+}
+
+.box5 {
+    @include roundedBox(10px, $c:green);
+}
+.box1 {
+    @include circle(50px, red);
+}
+.box2 {
+    @include circle(100px, blue);
+}
+.box3 {
+    @include circle(200px, green);
+}

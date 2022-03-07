@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:olivedrab;
+        }
+        .box {
+            border:1px solid #ddd;
+            margin:50px;
+            padding:50px;
+            position:relative;
+        }
+
+        .box img {
+            position:absolute;
+            left:500px;
+            bottom:120px;
+            transition:all 0.5s;
+            width:120px; 
+        }
+
+        .box img {
+            animation-name:jump;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-fill-mode: both;
+            animation-delay: 0.2s;
+            animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .box:hover img {
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+            from { left:0;}
+            to { left:300px;}
+        }
+
+        @keyframes jump {
+            0% { bottom:20px;}
+            50% { bottom:40px;}
+            100% { bottom:20px;}
+        }
+
+        @keyframes rotate {
+            0% { transform:scale(0) rotate(0)}
+            100% { transform:scale(2) rotate(1080deg)}
+        }
+
+        .box2 {
+            width:300px;height:50px;
+            background:coral; 
+            margin:0 auto;
+            transition:all 0.5s;
+            transform-origin:right top;
+            /* animation:move 2s infinite alternate both; */
+        }
+        .wrap {
+            outline:1px solid yellow;
+            padding:50px;
+            margin:50px;
+           
+        }
+        .wrap:hover .box2 {
+            /* transform:scale(1.5) rotate(360deg) skew(-45deg); */
+            transform:rotate(45deg)
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/ft_logo.png" alt="">
+    </div>
+    <div class="wrap">
+        <div class="box2">HELLO</div>
+
+    </div>
+
+</body>
+</html>

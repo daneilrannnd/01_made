@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@mixin flex($a:center, $j:space-between, $w:nowrap) {
+    display:flex;
+    justify-content:$j;
+    align-items:$a;
+    flex-wrap:$w;
+}
+
+
+.box1 {
+    @include flex($a:flex-start, $j:center, $w:wrap);
+}
